@@ -1,0 +1,37 @@
+
+environment
+    tabular_data
+    # graphics
+    results_output
+        hdf5
+
+method
+    conmin_frcg
+        convergence_tolerance = 1.e-8
+    output  verbose     # silent
+
+variables
+    continuous_design = 11
+        lower_bounds =  30          0.0         0.95        0.05        0.05        600         300         0.01    0.01     0.01     0.0001
+        upper_bounds =  100         25.0        1.00        0.15        0.15        1000        500         0.05    0.1    0.1    0.1
+        descriptors =   'V_cstr_2'  'U_cstr_3'  'Fa1'       'Fa3'       'Fa4'       'V_cstr_5'  'V_cstr_6'  'Ff8'   'Fa8'   'Kv'    'V_cstr_8'  
+
+interface
+    analysis_drivers 	= 'driver_model3.sh'
+    fork
+    parameters_file 	= 'params.in'
+    results_file        = 'results.out'
+    file_save
+    file_tag
+    asynchronous
+        evaluation_concurr  4
+
+responses
+    objective_functions = 1
+    descriptors = 'SSE'
+    # weights = 1 1
+    # response_functions = 4
+    # descriptors = 'T_cstr_2' 'T_pfr_4' 'NO_pfr_4' 'NH3_pfr_4'
+    numerical_gradients
+    no_hessians
+

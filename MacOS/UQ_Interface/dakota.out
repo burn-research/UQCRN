@@ -1,0 +1,156 @@
+Dakota version 6.16 released May 16 2022.
+Repository revision 43c9862b3 (2022-05-06) built May  9 2022 03:51:48.
+Running MPI Dakota executable in serial mode.
+Start time: Tue Feb 13 11:21:11 2024
+
+-----------------------
+Begin DAKOTA input file
+dakota_model2.in
+-----------------------
+
+environment
+    tabular_data
+    #graphics
+
+method
+  sampling
+       sample_type random
+        samples = 5
+        seed 12345
+
+	# USE THIS IF YOU ARE INTERESTED IN CDF of RESPONSES
+    	#num_probability_levels = 0 17 17
+    	#probability_levels =
+      	#	.001 .01 .05 .1 .15 .2 .3 .4 .5 .6 .7 .8 .85 .9 .95 .99 .999
+      	#	.001 .01 .05 .1 .15 .2 .3 .4 .5 .6 .7 .8 .85 .9 .95 .99 .999
+    	#cumulative distribution
+	 
+	#response_levels = 0 1 2 3 4 5 6 7 8 9 10
+	#0 1 2 3 4 5 6 7 8 9 10
+	#0 1 2 3 4 5 6 7 8 9 10
+  #0 1 2 3 4 5 6 7 8 9 10
+
+variables
+  active uncertain
+  normal_uncertain = 2
+    means               =  710.0         388.0
+    std_deviations      =  50.0           25.0
+    descriptors         =  'V_cstr_5'   'V_cstr_6'
+
+  uniform_uncertain = 5
+    lower_bounds = 			 0.05     0.96    0.05    30.0        0.0
+    upper_bounds =			 0.15     0.99    0.25    100.0       15.0
+    descriptors =   	  'Fa3'     'Fa1'   'Fa4'   'V_cstr_2'  'U_cstr_3'
+
+interface
+      analysis_drivers 	= 'driver_model2.sh'
+      fork
+      parameters_file 	= 'params.in'
+      results_file      = 'results.out'
+      file_save
+      file_tag
+      asynchronous
+      evaluation_concurr 1
+
+responses
+  response_functions = 4
+  descriptors = 'T_cstr_2' 'T_pfr_7' 'NO_pfr_7' 'NH3_pfr_7'
+  no_gradients
+  no_hessians
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'dakota_model2.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running random_sampling iterator.
+
+NonD random Samples = 5 Seed (user-specified) = 12345
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      7.7136756648e+02 V_cstr_5
+                      3.4416289472e+02 V_cstr_6
+                      1.0955447026e-01 Fa3
+                      9.7121763531e-01 Fa1
+                      5.5357945478e-02 Fa4
+                      5.0405167206e+01 V_cstr_2
+                      9.4064148387e+00 U_cstr_3
+
+blocking fork: driver_model2.sh params.in.1 results.out.1
+
+Active response data for evaluation 1:
+Active set vector = { 1 1 1 1 }
+                      2.2770650000e+03 T_cstr_2
+                      1.2000000000e+03 T_pfr_7
+                      4.1964260000e+02 NO_pfr_7
+                      1.3750760000e-07 NH3_pfr_7
+
+
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      6.6497343864e+02 V_cstr_5
+                      4.1150437868e+02 V_cstr_6
+                      9.6192630776e-02 Fa3
+                      9.6464920067e-01 Fa1
+                      1.9954296127e-01 Fa4
+                      5.7912082518e+01 V_cstr_2
+                      9.8461677146e+00 U_cstr_3
+
+blocking fork: driver_model2.sh params.in.2 results.out.2
+
+Active response data for evaluation 2:
+Active set vector = { 1 1 1 1 }
+                      2.2792210000e+03 T_cstr_2
+                      1.2000000000e+03 T_pfr_7
+                      3.8492180000e+02 NO_pfr_7
+                      3.5093060000e-07 NH3_pfr_7
+
+
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      6.8610708952e+02 V_cstr_5
+                      3.9226462955e+02 V_cstr_6
+                      1.4563099744e-01 Fa3
+                      9.7960709625e-01 Fa1
+                      5.1677659759e-02 Fa4
+                      8.6510209555e+01 V_cstr_2
+                      1.3618873459e+01 U_cstr_3
+
+blocking fork: driver_model2.sh params.in.3 results.out.3
+
+Active response data for evaluation 3:
+Active set vector = { 1 1 1 1 }
+                      2.2878700000e+03 T_cstr_2
+                      1.2000000000e+03 T_pfr_7
+                      5.3899670000e+02 NO_pfr_7
+                      2.3607360000e-07 NH3_pfr_7
+
+
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      6.5384730260e+02 V_cstr_5
+                      3.6736394334e+02 V_cstr_6
+                      1.4645145214e-01 Fa3
+                      9.8246719911e-01 Fa1
+                      2.2846874529e-01 Fa4
+                      5.0909259641e+01 V_cstr_2
+                      1.2147188267e+01 U_cstr_3
+
+blocking fork: driver_model2.sh params.in.4 results.out.4
+
+Dakota caught signal 2

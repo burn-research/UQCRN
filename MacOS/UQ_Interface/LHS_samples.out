@@ -1,0 +1,40 @@
+ $ LHS File Format Version 1.00 
+$
+$ This LHS run was executed on  2/13/24 at 11:21:11.63
+$ with LHS Version: 2.30 Release 1, Compiled May 31, 2001        
+$ The run title was:
+$ Pecos::LHSDriver                                                                                 RANDOM SAMPLE
+$
+$ Message output file for this run: LHS_distributions.out
+$
+$ Input file(s) for this run: 
+$
+$ Point Values for the distributions follow:
+$
+$ All point values represent mean values that
+$ were calculated from the actual LHS sample.
+$
+    Normal1               7.1198846E+02
+    Normal2               3.8106164E+02
+    Uniform3              1.2262945E-01
+    Uniform4              9.7713066E-01
+    Uniform5              1.5546173E-01
+    Uniform6              5.6637565E+01
+    Uniform7              1.1620257E+01
+$
+@UNCERTAINTY
+  @OBSERVATIONS      5
+  @VARIABLES      7
+    Normal1:           
+    Normal2:           
+    Uniform3:          
+    Uniform4:          
+    Uniform5:          
+    Uniform6:          
+    Uniform7:          
+@SAMPLEDATA
+           1           7   771.36756648331368        344.16289472449262       0.10955447026062756       0.97121763531351457        5.5357945477589966E-002   50.405167206190526        9.4064148387406021     
+           2           7   664.97343863573724        411.50437868153409        9.6192630776204158E-002  0.96464920066762716       0.19954296126961707        57.912082518450916        9.8461677145678550     
+           3           7   686.10708951630193        392.26462954962938       0.14563099744264035       0.97960709625156595        5.1677659759297973E-002   86.510209555272013        13.618873459054157     
+           4           7   653.84730259547223        367.36394334437773       0.14645145214162766       0.98246719910530367       0.22846874529495836        50.909259640611708        12.147188266972080     
+           5           7   783.64688656136411        390.01235627413729       0.11531770962756127       0.98771214465145019       0.24226134759373963        37.451106437947601        13.082638727501035     

@@ -1,0 +1,309 @@
+1
+
+                                             * * * * * * * * *  L H S  * * * * * * * * *
+
+                                             LATIN HYPERCUBE AND RANDOM SAMPLING PROGRAM
+
+                                             * * * * * * * * * * * * * * * * * * * * * *
+
+
+    Run on  2/13/24 at 11:21:11.63 with LHS Version: 2.30 Release 1, Compiled May 31, 2001        
+
+
+0    Pecos::LHSDriver                                                                                 RANDOM SAMPLE
+
+    Random Seed =       12345
+
+    Number of Variables =   7
+
+    Number of Observations =    5
+0   The sample was written to the file: LHS_samples.out
+0   Input was read from the file: 
+0   The sample input vectors will be printed along with their corresponding ranks.
+0   Histograms of the actual sample will be plotted for each input variable.
+0   The correlation matrices (raw data and rank correlations) will be printed.
+1
+
+    Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+
+    VARIABLE  DISTRIBUTION          RANGE            LABEL
+0       1     NORMAL WITH THE PARAMETERS BELOW                                                       
+                           MU =   710.                   SIGMA =   50.0    
+0       2     NORMAL WITH THE PARAMETERS BELOW                                                       
+                           MU =   388.                   SIGMA =   25.0    
+0       3        UNIFORM    5.000E-02 TO  0.150                                                        
+0       4        UNIFORM    0.960     TO  0.990                                                        
+0       5        UNIFORM    5.000E-02 TO  0.250                                                        
+0       6        UNIFORM     30.0     TO   100.                                                        
+0       7        UNIFORM     0.00     TO   15.0                                                        
+1Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0RANDOM SAMPLE INPUT VECTORS
+
+ RUN NO. X(1)      X(2)      X(3)      X(4)      X(5)      X(6)      X(7)
+0    1  771.      344.     0.110     0.971     5.536E-02  50.4      9.41    
+0    2  665.      412.     9.619E-02 0.965     0.200      57.9      9.85    
+0    3  686.      392.     0.146     0.980     5.168E-02  86.5      13.6    
+0    4  654.      367.     0.146     0.982     0.228      50.9      12.1    
+0    5  784.      390.     0.115     0.988     0.242      37.5      13.1    
+1Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0RANKS OF RANDOM SAMPLE INPUT VECTORS
+
+ RUN NO.    X(1)      X(2)      X(3)      X(4)      X(5)      X(6)      X(7)
+0    1        4.        1.        2.        2.        2.        2.        1.
+0    2        2.        5.        1.        1.        3.        4.        2.
+0    3        3.        4.        4.        3.        1.        5.        5.
+0    4        1.        2.        5.        4.        4.        3.        3.
+0    5        5.        3.        3.        5.        5.        1.        4.
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  1     NORMAL DISTRIBUTION
+
+     Midpoint          Freq.
+
+   6.5324999E+02         1    X
+   6.5974999E+02         0
+   6.6624999E+02         1    X
+   6.7274998E+02         0
+   6.7924998E+02         0
+   6.8574998E+02         1    X
+   6.9224998E+02         0
+   6.9874998E+02         0
+   7.0524998E+02         0
+   7.1174998E+02         0
+   7.1824998E+02         0
+   7.2474998E+02         0
+   7.3124998E+02         0
+   7.3774998E+02         0
+   7.4424998E+02         0
+   7.5074998E+02         0
+   7.5724998E+02         0
+   7.6374998E+02         0
+   7.7024998E+02         1    X
+   7.7674998E+02         0
+   7.8324998E+02         1    X
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   6.5384730E+02  7.8364689E+02  1.2979958E+02  7.1198846E+02  6.8610709E+02  3.7303650E+03
+
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  2     NORMAL DISTRIBUTION
+
+     Midpoint          Freq.
+
+   3.4509999E+02         1    X
+   3.4849999E+02         0
+   3.5189999E+02         0
+   3.5529999E+02         0
+   3.5869999E+02         0
+   3.6209999E+02         0
+   3.6549999E+02         0
+   3.6889999E+02         1    X
+   3.7229999E+02         0
+   3.7569999E+02         0
+   3.7909999E+02         0
+   3.8249999E+02         0
+   3.8589999E+02         0
+   3.8929999E+02         1    X
+   3.9269999E+02         1    X
+   3.9609999E+02         0
+   3.9949999E+02         0
+   4.0289999E+02         0
+   4.0629999E+02         0
+   4.0969999E+02         0
+   4.1309999E+02         1    X
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   3.4416289E+02  4.1150438E+02  6.7341484E+01  3.8106164E+02  3.9001236E+02  6.7038173E+02
+
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  3     UNIFORM DISTRIBUTION
+
+     Midpoint          Freq.
+
+   9.6249998E-02         1    X
+   9.8749998E-02         0
+   1.0125000E-01         0
+   1.0375000E-01         0
+   1.0625000E-01         0
+   1.0875000E-01         1    X
+   1.1125000E-01         0
+   1.1375000E-01         0
+   1.1625000E-01         1    X
+   1.1875000E-01         0
+   1.2125000E-01         0
+   1.2375000E-01         0
+   1.2625000E-01         0
+   1.2875000E-01         0
+   1.3125000E-01         0
+   1.3375000E-01         0
+   1.3625000E-01         0
+   1.3875000E-01         0
+   1.4125000E-01         0
+   1.4375000E-01         0
+   1.4625000E-01         2    XX
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   9.6192631E-02  1.4645145E-01  5.0258821E-02  1.2262945E-01  1.1531771E-01  5.0497026E-04
+
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  4     UNIFORM DISTRIBUTION
+
+     Midpoint          Freq.
+
+   9.6419998E-01         1    X
+   9.6539998E-01         0
+   9.6659998E-01         0
+   9.6779998E-01         0
+   9.6899998E-01         0
+   9.7019998E-01         0
+   9.7139998E-01         1    X
+   9.7259998E-01         0
+   9.7379998E-01         0
+   9.7499998E-01         0
+   9.7619998E-01         0
+   9.7739998E-01         0
+   9.7859998E-01         0
+   9.7979998E-01         1    X
+   9.8099998E-01         0
+   9.8219998E-01         1    X
+   9.8339998E-01         0
+   9.8459998E-01         0
+   9.8579998E-01         0
+   9.8699998E-01         0
+   9.8819998E-01         1    X
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   9.6464920E-01  9.8771214E-01  2.3062944E-02  9.7713066E-01  9.7960710E-01  8.4332473E-05
+
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  5     UNIFORM DISTRIBUTION
+
+     Midpoint          Freq.
+
+   5.2249999E-02         2    XX
+   6.1749999E-02         0
+   7.1249998E-02         0
+   8.0749998E-02         0
+   9.0249998E-02         0
+   9.9749998E-02         0
+   1.0925000E-01         0
+   1.1875000E-01         0
+   1.2825000E-01         0
+   1.3775000E-01         0
+   1.4725000E-01         0
+   1.5675000E-01         0
+   1.6625000E-01         0
+   1.7575000E-01         0
+   1.8525000E-01         0
+   1.9475000E-01         0
+   2.0425000E-01         1    X
+   2.1375000E-01         0
+   2.2325000E-01         0
+   2.3274999E-01         1    X
+   2.4224999E-01         1    X
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   5.1677660E-02  2.4226135E-01  1.9058369E-01  1.5546173E-01  1.9954296E-01  8.8998134E-03
+
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  6     UNIFORM DISTRIBUTION
+
+     Midpoint          Freq.
+
+   3.6249999E+01         1    X
+   3.8749999E+01         0
+   4.1249999E+01         0
+   4.3749999E+01         0
+   4.6249999E+01         0
+   4.8749999E+01         0
+   5.1249999E+01         2    XX
+   5.3749999E+01         0
+   5.6249999E+01         0
+   5.8749999E+01         1    X
+   6.1249999E+01         0
+   6.3749999E+01         0
+   6.6249999E+01         0
+   6.8749998E+01         0
+   7.1249998E+01         0
+   7.3749998E+01         0
+   7.6249998E+01         0
+   7.8749998E+01         0
+   8.1249998E+01         0
+   8.3749998E+01         0
+   8.6249998E+01         1    X
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   3.7451106E+01  8.6510210E+01  4.9059103E+01  5.6637565E+01  5.0909260E+01  3.3344394E+02
+
+1   Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0  HISTOGRAM FOR VARIABLE NO.  7     UNIFORM DISTRIBUTION
+
+     Midpoint          Freq.
+
+   9.3449998E+00         1    X
+   9.5549998E+00         0
+   9.7649998E+00         1    X
+   9.9749998E+00         0
+   1.0185000E+01         0
+   1.0395000E+01         0
+   1.0605000E+01         0
+   1.0815000E+01         0
+   1.1025000E+01         0
+   1.1235000E+01         0
+   1.1445000E+01         0
+   1.1655000E+01         0
+   1.1865000E+01         0
+   1.2075000E+01         1    X
+   1.2285000E+01         0
+   1.2495000E+01         0
+   1.2705000E+01         0
+   1.2915000E+01         0
+   1.3125000E+01         1    X
+   1.3335000E+01         0
+   1.3545000E+01         1    X
+0                        5
+
+
+      Min            Max           Range           Mean          Median        Variance
+
+   9.4064148E+00  1.3618873E+01  4.2124586E+00  1.1620257E+01  1.2147188E+01  3.6147936E+00
+
+1Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0CORRELATIONS AMONG INPUT VARIABLES CREATED BY THE RANDOM SAMPLE FOR RAW DATA                                        PAGE   1
+0    1  1.0000
+0    2 -0.3912  1.0000
+0    3 -0.3712 -0.1961  1.0000
+0    4  0.2762 -0.1182  0.6227  1.0000
+0    5 -0.1456  0.3736 -0.1343  0.3153  1.0000
+0    6 -0.5032  0.2698  0.4501 -0.2067 -0.6536  1.0000
+0    7 -0.0552  0.2841  0.7237  0.8372  0.1413  0.2892  1.0000
+0            1       2       3       4       5       6       7
+0VARIABLES
+1Pecos::LHSDriver                                                                                 RANDOM SAMPLE               
+0CORRELATIONS AMONG INPUT VARIABLES CREATED BY THE RANDOM SAMPLE FOR RANK DATA                                        PAGE   1
+0    1  1.0000
+0    2 -0.2000  1.0000
+0    3 -0.3000 -0.3000  1.0000
+0    4  0.3000 -0.3000  0.7000  1.0000
+0    5  0.1000 -0.1000  0.1000  0.6000  1.0000
+0    6 -0.6000  0.6000  0.1000 -0.5000 -0.7000  1.0000
+0    7  0.1000  0.4000  0.6000  0.6000  0.0000  0.3000  1.0000
+0            1       2       3       4       5       6       7
+0VARIABLES

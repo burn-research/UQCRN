@@ -1,0 +1,30 @@
+
+# Dakota Input File: rosen_opt_nls.in
+
+environment
+  tabular_data
+    tabular_data_file = 'rosen_opt_nls.dat'
+
+method
+  nl2sol
+    convergence_tolerance = 1e-4
+    max_iterations = 100
+
+model
+  single
+
+variables
+  continuous_design = 2
+    initial_point    -1.2      1.0
+    lower_bounds     -2.0     -2.0
+    upper_bounds      2.0      2.0
+    descriptors       'x1'     "x2"
+
+interface
+  analysis_drivers = 'rosenbrock'
+    direct
+
+responses
+  calibration_terms = 2
+  analytic_gradients
+  no_hessians

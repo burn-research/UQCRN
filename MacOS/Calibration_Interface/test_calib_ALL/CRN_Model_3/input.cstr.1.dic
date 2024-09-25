@@ -1,0 +1,16 @@
+Dictionary PerfectlyStirredReactor 
+{ 
+      @KineticsFolder     dummy; 
+      @InletStatus        Inlet-Mixture; 
+      @Type               NonIsothermal-ConstantPressure; 
+      @Volume             1.000000e-02 cm3; 
+      @MassFlowRate      M1 kg/s;   
+} 
+
+ Dictionary Inlet-Mixture 
+ { 
+      @Pressure           506625 Pa; 
+      @Temperature        T_cstr_1 K;  
+      @Moles                 O2 0.21
+          N2 0.79; 
+} 

@@ -1,0 +1,18 @@
+Dictionary PerfectlyStirredReactor
+{
+@KineticsFolder dummy;
+@InletStatus Inlet-Mixture;
+@Type NonIsothermal-ConstantPressure;
+@GlobalThermalExchangeCoefficient 9.846167714567855e+00 W/m2/K;
+@ExchangeArea 1 m2;
+@EnvironmentTemperature 800.0 K;
+@MassFlowRate 0.03542953846584239 kg/s;
+@Volume 50 cm3;
+}
+Dictionary Inlet-Mixture
+{
+@Pressure 506625 Pa;
+@Temperature 1500 K;
+@Masses O2 0.21
+N2 0.79;
+}

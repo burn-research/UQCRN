@@ -1,0 +1,15 @@
+digraph g{
+"IN0" -> "PSR0"
+"IN1" -> "PSR1"
+"PSR0" -> "PSR2"
+"PSR1" -> "PSR2"
+"PSR1" -> "PSR5"
+"PSR1" -> "PSR6"
+"PSR1" -> "PFR7"
+"PSR2" -> "PSR3"
+"PSR3" -> "PFR4"
+"PFR4" -> "PSR5"
+"PSR5" -> "PSR6"
+"PSR6" -> "PFR7"
+"PFR7" -> "OUT7"
+}

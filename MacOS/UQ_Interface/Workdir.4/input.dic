@@ -1,0 +1,43 @@
+Dictionary ReactorNetwork
+{
+@KineticsPreProcessor kinetic-mechanism;
+@MinIterations 5;
+@MaxIterations 500;
+@AtomicErrorThreshold 1e-4;
+@NonIsothermalErrorThreshold 1e-4;
+@MaxUnbalance 0.05;
+@PlugFlowReactors
+4 input.pfr.4.dic
+7 input.pfr.7.dic;
+@PerfectlyStirredReactors
+0 input.cstr.0.dic
+1 input.cstr.1.dic
+2 input.cstr.2.dic
+3 input.cstr.3.dic
+5 input.cstr.5.dic
+6 input.cstr.6.dic;
+@InternalConnections
+0 2 0.005151840393964265
+1 2 0.030836956273271734
+1 5 0.023291669899727713
+1 6 0.035477222357947445
+1 7 0.09706402124445632
+2 3 0.035988796667236
+3 4 0.035988796667236
+4 5 0.035988796667236
+5 6 0.05928046656696371
+6 7 0.09475768892491115 ;
+@InputStreams
+0 0.005151840393964265
+1 0.18666986977540323 ;
+@OutputStreams
+7 0.19182171016936747 ;
+@SpeciesToMonitor NO NH3 ;
+@VerbosityLevel 1;
+}
+Dictionary kinetic-mechanism
+{
+@Kinetics /Users/matteosavarese/Desktop/Dottorato/Ammonia_SNCR_Project/Open_Smoke_simulations/Otomo/otomo.inp;
+@Thermodynamics /Users/matteosavarese/Desktop/Dottorato/Ammonia_SNCR_Project/Open_Smoke_simulations/Otomo/otomo_therm.dat;
+@Output kinetics;
+}
